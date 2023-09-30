@@ -2,16 +2,22 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
 	"name": "C++",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
+	
 	"customizations": {
 		"vscode": {
 			"extensions": [
+				"formulahendry.code-runner",
 				"ms-vscode.cpptools"
-			]
+				
+			],
+			"features": {
+				"code-runner.runInTerminal": true,
+				"code-runner.saveAllFilesBeforeRun": true,
+				"editor.mouseWheelZoom": true
+			}
 		}
 	}
+
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
